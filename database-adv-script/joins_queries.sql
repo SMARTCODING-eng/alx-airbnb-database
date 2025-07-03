@@ -7,13 +7,13 @@ INNER JOIN u ON b.user_id = u.user_id;
 
 SELECT property_id FROM properties as p
 SELECT * FROM reviews AS r
-LEFT JOIN p ON p.property_id = r.property_id;
+LEFT JOIN p ON p.property_id = r.property_id
+ORDER BY p.property_id ASC, r.review_date DESC;
 
 
 SELECT * FROM users as u 
 SELECT * FROM bookings AS b
 FULL OUTER JOIN b ON u.user_id = b.user_id;
-
 
 
 

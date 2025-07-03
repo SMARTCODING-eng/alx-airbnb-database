@@ -1,11 +1,9 @@
---
 INSERT INTO "user" (user_id, first_name, last_name, email, password_hash, phone_number, role) VALUES
-(1, 'John', 'Doe', 'john.doe@example.com', 'hash_johndoe_password', '+1234567890', 'guest'),
-(2, 'Jane', 'Smith', 'jane.smith@example.com', 'hash_janesmith_password', '+1987654321', 'guest'),
-(3, 'Adewale', 'Akinnuoye', 'adewale.a@example.com', 'hash_adewale_password', '+2348012345678', 'host'),
-(4, 'Chinelo', 'Okoro', 'chinelo.o@example.com', 'hash_chinelo_password', '+2349087654321', 'host'),
-(5, 'Admin', 'User', 'admin@airbnb.clone', 'hash_admin_password', null, 'admin');
-
+('1', 'John', 'Doe', 'john.doe@example.com', 'hash_johndoe_password', '+1234567890', 'guest'),
+('2', 'Jane', 'Smith', 'jane.smith@example.com', 'hash_janesmith_password', '+1987654321', 'guest'),
+('3', 'Adewale', 'Akinnuoye', 'adewale.a@example.com', 'hash_adewale_password', '+2348012345678', 'host'),
+('4', 'Chinelo', 'Okoro', 'chinelo.o@example.com', 'hash_chinelo_password', '+2349087654321', 'host'),
+('5', 'Admin', 'User', 'admin@airbnb.clone', 'hash_admin_password', null, 'admin');
 
 
 INSERT INTO "property" (property_id, host_id, name, description, location, price_per_night) VALUES

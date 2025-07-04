@@ -16,6 +16,8 @@ FROM bookings AS b
 INNER JOIN users AS u ON b.user_id = u.user_id
 INNER JOIN properties AS p ON b.property_id = p.property_id
 LEFT JOIN payments AS pay ON b.booking_id = pay.booking_id
+WHERE u.user_id = 'some-specific-user-uuid' -- Filter for a particular user
+AND b.check_in_date >= '2025-01-01'
 ORDER BY b.check_in_date BESC;
 
 

@@ -12,4 +12,3 @@ PARTITION BY RANGE (check_in_date)  (
 
 
 
-

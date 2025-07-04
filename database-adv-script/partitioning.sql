@@ -10,5 +10,4 @@ PARTITION BY RANGE (check_in_date)  (
     PARTITION p_future VALUES LESS THAN MAXVALUE
 );
 
-
-
+CREATE TABLE bookings_default PARTITION OF bookings DEFAULT;

@@ -48,9 +48,7 @@ This document outlines the steps to measure query performance before and after a
     * **Ranking Properties by Bookings (Window Function):**
         ```sql
         EXPLAIN ANALYZE
-        SELECT property_id, property_title, total_bookings, RANK() OVER (ORDER BY total_bookings DESC) AS booking_rank
-            
-            
+        SELECT property_id, property_title, total_bookings, RANK() OVER (ORDER BY total_bookings DESC) AS booking_rank   
         FROM (
             SELECT
                 property_id, title AS property_title, COUNT(b.booking_id) AS total_bookings
